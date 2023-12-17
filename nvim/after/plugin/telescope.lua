@@ -6,3 +6,5 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find Buffers" })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Find Help Tags" })
 vim.keymap.set('n', '<leader>fw', builtin.grep_string, { desc = "Find Word under Cursor" })
 vim.keymap.set('n', '<leader>gb', builtin.git_bcommits, { desc = "Search Git Commits for Buffer" })
+
+require('telescope').load_extension('fzf')
