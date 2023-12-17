@@ -4,6 +4,11 @@ require("catppuccin").setup({
         light = "latte",
         dark = "macchiato",
     },
+    custom_highlights = function(colors)
+        return {
+            LineNr = { fg = "#95b1cf" },
+        }
+    end
 })
 
 -- setup must be called before loading
