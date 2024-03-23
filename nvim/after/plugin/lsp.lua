@@ -1,6 +1,7 @@
 local lsp_zero = require('lsp-zero')
 
 require'lspconfig'.clangd.setup{}
+require'lspconfig'.jedi_language_server.setup{}
 
 lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
