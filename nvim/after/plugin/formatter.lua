@@ -17,4 +17,4 @@ require("formatter").setup {
   }
 }
 
-vim.keymap.set('n', '<leader>f', ":Format<CR>", { desc = "Format file" })
+vim.keymap.set('n', '<leader>fm', ":Format<CR>", { desc = "Format file" })
