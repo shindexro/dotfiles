@@ -46,7 +46,15 @@ return require('packer').startup(function(use)
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'L3MON4D3/LuaSnip'},
 	  }
-  } 
+  }
+
+  use {
+      'folke/trouble.nvim',
+      requires = {
+          {'nvim-tree/nvim-web-devicons'}
+      }
+  }
+
 
   use { 'alexghergh/nvim-tmux-navigation', config = function()
       require'nvim-tmux-navigation'.setup {
